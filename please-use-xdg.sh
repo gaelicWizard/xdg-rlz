@@ -59,12 +59,12 @@
 # - Hex
 # - Mix
 # - NV
-[ -z "$XDG_CACHE_HOME"  ] && export XDG_CACHE_HOME="$HOME/.cache"
-[ -z "$XDG_CONFIG_DIRS" ] && export XDG_CONFIG_DIRS="/etc/xdg"
-[ -z "$XDG_CONFIG_HOME" ] && export XDG_CONFIG_HOME="$HOME/.config"
-[ -z "$XDG_DATA_DIRS"   ] && export XDG_DATA_DIRS="/usr/local/share:/usr/share"
-[ -z "$XDG_DATA_HOME"   ] && export XDG_DATA_HOME="$HOME/.local/share"
-[ -z "$XDG_STATE_HOME"   ] && export XDG_STATE_HOME="$HOME/.local/state"
+[ -z "$XDG_CACHE_HOME"	] && export XDG_CACHE_HOME="$HOME/.cache"
+[ -z "$XDG_CONFIG_DIRS"	] && export XDG_CONFIG_DIRS="/etc/xdg"
+[ -z "$XDG_CONFIG_HOME"	] && export XDG_CONFIG_HOME="$HOME/.config"
+[ -z "$XDG_DATA_DIRS"	] && export XDG_DATA_DIRS="/usr/local/share:/usr/share"
+[ -z "$XDG_DATA_HOME"	] && export XDG_DATA_HOME="$HOME/.local/share"
+[ -z "$XDG_STATE_HOME"	] && export XDG_STATE_HOME="$HOME/.local/state"
 
 # Ack
 export ACKRC="$XDG_CONFIG_HOME/ack/ackrc"
@@ -73,16 +73,16 @@ export ACKRC="$XDG_CONFIG_HOME/ack/ackrc"
 export ATOM_HOME="$XDG_DATA_HOME/atom"
 
 # AWS CLI
-export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials" \
-  AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_STATE_HOME/aws/credentials" \
+	AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 
 # Azure CLI
 export AZURE_CONFIG_DIR="$XDG_DATA_HOME/azure"
 
 # Bundler
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle" \
-  BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle" \
-  BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle/plugin"
+	BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle" \
+	BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle/plugin"
 
 # Cargo
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
@@ -98,7 +98,7 @@ export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
 # Less
 export LESSKEY="$XDG_CONFIG_HOME/less/lesskey" \
-  LESSHISTFILE="$XDG_STATE_HOME/less/history"
+	LESSHISTFILE="$XDG_STATE_HOME/less/history"
 
 # Mathematica
 export MATHEMATICA_USERBASE="$XDG_CONFIG_HOME/Mathematica"
@@ -117,11 +117,11 @@ export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
 
 # PostgreSQL
 export PSQLRC="$XDG_CONFIG_HOME/postgres/rc" \
-  PSQL_HISTORY="$XDG_STATE_HOME/postgres/history" \
-  PGPASSFILE="$XDG_CONFIG_HOME/postgres/pass" \
-  PGSERVICEFILE="$XDG_CONFIG_HOME/postgres/service.conf"
+	PSQL_HISTORY="$XDG_STATE_HOME/postgres/history" \
+	PGPASSFILE="$XDG_CONFIG_HOME/postgres/pass" \
+	PGSERVICEFILE="$XDG_CONFIG_HOME/postgres/service.conf"
 # We need to create these directories if not exists
-mkdir -p "$XDG_CONFIG_HOME/postgres" "$XDG_CONFIG_HOME/postgres"
+mkdir -p "$XDG_CONFIG_HOME/postgres" "$XDG_STATE_HOME/postgres"
 
 # Readline
 export INPUTRC="$XDG_CONFIG_HOME/readline/inputrc"
@@ -131,7 +131,7 @@ export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
 # Vagrant
 export VAGRANT_HOME="$XDG_DATA_HOME/vagrant" \
-  VAGRANT_ALIAS_FILE="$XDG_DATA_HOME/vagrant/aliases"
+	VAGRANT_ALIAS_FILE="$XDG_DATA_HOME/vagrant/aliases"
 
 # WeeChat
 export WEECHAT_HOME="$XDG_CONFIG_HOME/weechat"
