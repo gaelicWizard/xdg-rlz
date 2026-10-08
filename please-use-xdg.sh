@@ -135,3 +135,8 @@ export VAGRANT_HOME="$XDG_DATA_HOME/vagrant" \
 
 # WeeChat
 export WEECHAT_HOME="$XDG_CONFIG_HOME/weechat"
+
+# ZSH
+export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
+
+
